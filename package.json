@@ -1,0 +1,38 @@
+{
+  "name": "recruiting-node-proj",
+  "version": "1.0.0",
+  "description": "Recruiting Project for node",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "npx standard",
+    "test": "LOG_LEVEL=fatal npx jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "players": "./__data__/players.json"
+    }
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgahq/recruiting-node-proj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgahq/recruiting-node-proj/issues"
+  },
+  "homepage": "https://github.com/pgahq/recruiting-node-proj#readme",
+  "devDependencies": {
+    "jest": "^23.2.0",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "log4js": "3.0.5"
+  }
+}
